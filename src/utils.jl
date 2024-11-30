@@ -1,0 +1,13 @@
+using Printf
+
+function read_input(day::Integer)
+    path = joinpath(@__DIR__, "..", "input", @sprintf("day%02d.txt", day))
+    input = open(path, "r") do file
+        read(file, String)
+    end
+    return input
+end
+export read_input
+
+zero() = 0
+export zero
