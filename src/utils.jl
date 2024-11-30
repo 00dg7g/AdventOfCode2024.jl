@@ -8,6 +8,3 @@ function read_input(day::Integer)
     return input
 end
 export read_input
-
-zero() = 0
-export zero

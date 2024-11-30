@@ -2,3 +2,11 @@ name = "AdventOfCode2024"
 uuid = "4d77b8b5-5c2e-47f3-9066-91564564bc64"
 authors = ["00dg7g <andrea.galvan1@yahoo.com>"]
 version = "0.1.0"
+
+[deps]
+ArgParse = "c7e460c6-2fb9-53a9-8c5b-16f535851c63"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+
+[compat]
+ArgParse = "1.2.0"
+Printf = "1.11.0"
