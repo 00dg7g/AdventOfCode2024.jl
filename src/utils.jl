@@ -8,3 +8,6 @@ function read_input(day::Integer)
     return input
 end
 export read_input
+
+parse_int(str::AbstractString) = parse(Int, str)
+export parse_int
