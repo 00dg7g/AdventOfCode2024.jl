@@ -11,3 +11,16 @@ export read_input
 
 parse_int(str::AbstractString) = parse(Int, str)
 export parse_int
+
+function find(input::Vector{Vector{Any}}, x::Any)
+    res = []
+    for i in 1:length(input)
+        for j in 1:length(input[i])
+            if input[i][j] == x
+                push!(res, (i, j))
+            end
+        end
+    end
+    res
+end
+export find
