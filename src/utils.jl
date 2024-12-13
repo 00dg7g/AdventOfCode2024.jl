@@ -24,3 +24,6 @@ function find(input::Vector{Vector{Any}}, x::Any)
     res
 end
 export find
+
+isclose(x::Float64, eps::Float64) = round(x) - eps <= x <= round(x) + eps
+export isclose
