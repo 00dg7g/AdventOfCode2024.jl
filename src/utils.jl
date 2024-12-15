@@ -12,7 +12,7 @@ export read_input
 parse_int(str::AbstractString) = parse(Int, str)
 export parse_int
 
-function find(input::Vector{Vector{Any}}, x::Any)
+function find(input::Vector{Vector{Char}}, x::Char)
     res = []
     for i in 1:length(input)
         for j in 1:length(input[i])
