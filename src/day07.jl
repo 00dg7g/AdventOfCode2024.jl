@@ -5,7 +5,7 @@ using Chain
 
 concatenation(a, b) = parse_int("$a$b")
 
-function check2(line::Vector{Int}, ops::Vector{Function}, i::Int, acc::Int)
+function check(line::Vector{Int}, ops::Vector{Function}, i::Int, acc::Int)
     if acc > line[1]
         return false
     end

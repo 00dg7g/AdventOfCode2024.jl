@@ -29,8 +29,9 @@ function day13(input::String)
         input[i][6] += 10000000000000
         p2 += solve(input[i])
     end
+    p1, p2 = Int(p1), Int(p2)
 
-    @show (Int(p1), Int(p2))
+    @show p1, p2
 end
 
 day13(read_input(13))

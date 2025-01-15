@@ -17,7 +17,7 @@ function number(wires::Dict{String, Bool}, prefix::String)
     ans
 end
 
-function update!(wires::Dict{String, Bool}, connections::Vector{Vector{String}})
+function change!(wires::Dict{String, Bool}, connections::Vector{Vector{String}})
     for _ in 1:length(connections)
         for (x1, op, x2, x3) in connections
             try
@@ -61,7 +61,7 @@ function day24(input::String)
         wires[name] = value
     end
 
-    update!(wires, connections)
+    change!(wires, connections)
     p1 = number(wires, "z")
 
     @show (p1, nothing)

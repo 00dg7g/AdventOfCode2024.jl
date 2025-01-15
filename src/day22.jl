@@ -34,7 +34,7 @@ function prices(n::Int)
     v
 end
 
-function p1(n::Int)
+function solve1(n::Int)
     for _ in 1:2000
         n = next(n)
     end
@@ -50,7 +50,7 @@ function day22(input::String)
 
     p1 = 0
     for n in input
-        p1 += p1(n)
+        p1 += solve1(n)
     end
 
     p2 = 0
