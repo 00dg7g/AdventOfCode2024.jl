@@ -1,5 +1,4 @@
 # AdventOfCode2024.jl
-Advent of Code 2024 in Julia
 
 Solutions for [Advent of Code](https://adventofcode.com), implemented in Julia.
 
